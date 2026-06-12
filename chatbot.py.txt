@@ -1,0 +1,26 @@
+def my_chatbot():
+    print(" Hey! I'm your mini chatbot. (type 'exit' to stop)\n")
+
+    while True:
+        user_input = input("You -> ").strip().lower()
+
+        if user_input in ["hi", "hello", "hey"]:
+            print("Bot -> Hello buddy! ")
+
+        elif "how are you" in user_input:
+            print("Bot -> I'm good! Thanks for asking What about you?")
+
+        elif "name" in user_input:
+            print("Bot -> I don't have a fancy name yet You can call me ChatBuddy!")
+
+        elif "timepass" in user_input or "bored" in user_input:
+            print("Bot -> Same here Try coding something fun!")
+
+        elif user_input == "exit":
+            print("Bot -> Okay bye! See you soon.")
+            break
+
+        else:
+            print("Bot -> Hmm... I didn't understand that ")
+
+my_chatbot()
